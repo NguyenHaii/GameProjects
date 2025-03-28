@@ -32,7 +32,7 @@ namespace GameProject.Models
             if (health < 0) health = 0;
             Console.WriteLine($"{name} nhận {actualDamage} sát thương, còn {health} HP.");
         }
-        public int Level => level; // Thêm thuộc tính Level để lấy giá trị cấp độ
+        public int Level => level; 
 
         public int GetHealth() => health;
         public string GetName() => name;
