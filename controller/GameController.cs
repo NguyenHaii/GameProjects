@@ -88,7 +88,6 @@ namespace GameProject.Controllers
             Random rand = new Random();
             int index1, index2;
 
-            // Ensure two different characters are chosen
             do
             {
                 index1 = rand.Next(characters.Count);
@@ -122,7 +121,7 @@ namespace GameProject.Controllers
         static void SaveCharactersToFile()
         {
             string directoryPath = "data";
-            Directory.CreateDirectory(directoryPath); // Ensure the 'data' folder exists
+            Directory.CreateDirectory(directoryPath); 
             string filePath = Path.Combine(directoryPath, "characters.txt");
 
             using (StreamWriter writer = new StreamWriter(filePath))
